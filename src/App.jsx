@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ThemeChange from "./components/dark/light/ThemeChange";
+import ThemeChange from "./components/themeChanger/ThemeChange";
 
 const App = () => {  
 

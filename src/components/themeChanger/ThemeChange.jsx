@@ -29,7 +29,7 @@ export default function ThemeChange() {
           }`}
         ></span>
       </div>
-      <img src={darkIcon} alt="" />
+      <img src={darkIcon}/>
 
     </div>
   );
