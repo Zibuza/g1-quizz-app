@@ -1,29 +1,14 @@
 import React, { useEffect, useState } from "react";
+import ThemeChange from "./components/dark/light/ThemeChange";
 
-const App = () => {
-
-  const [colorTheme, setColorTheme] = useState("light");
-  useEffect(() => {
-    if (colorTheme === "light") {
-      document.querySelector("html").classList.remove("dark");
-    } else {
-      document.querySelector("html").classList.add("dark");
-    }
-  }, [colorTheme]);
+const App = () => {  
 
 
   return (
-    <main className="w-full light h-[100dvh] bg-light-gray dark:bg-dark-navy">
-      <button
-        onClick={() => {
-          colorTheme === "light"
-            ? setColorTheme("dark")
-            : setColorTheme("light");
-        }}
-      >
-        {colorTheme}
-      </button>
-    </main>
+    <main className="w-full h-[100dvh] bg-light-gray p-[30px] dark:bg-dark-navy">
+  <ThemeChange />
+</main>
+
   );
 };
 
