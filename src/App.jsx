@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const App = () => {
+
   const [colorTheme, setColorTheme] = useState("light");
   useEffect(() => {
     if (colorTheme === "light") {
@@ -9,6 +10,8 @@ const App = () => {
       document.querySelector("html").classList.add("dark");
     }
   }, [colorTheme]);
+
+
   return (
     <main className="w-full light h-[100dvh] bg-light-gray dark:bg-dark-navy">
       <button
